@@ -26,7 +26,7 @@ public class WelcomeController {
 	
 	@RequestMapping("/insert2")
 	public String insert2(@RequestParam Map<String,String>map) {
-		
+		indexdao.insert(map);
 		return "index";
 	}
 	
